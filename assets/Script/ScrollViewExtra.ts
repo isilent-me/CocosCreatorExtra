@@ -4,12 +4,14 @@ const {ccclass,property,requireComponent} = cc._decorator;
 @requireComponent(cc.ScrollView)
 export default class ScrollViewExtra extends cc.Component {
 
-    /** 是否增加子节点区间功能 */
-    @property
+    @property({
+        tooltip: '是否增加子节点区间功能'
+    })
     extraScrollChildIndex = true;
 
-    /** 是否增加Scrollbar滑动功能 */
-    @property
+    @property({
+        tooltip: '是否增加Scrollbar滑动功能'
+    })
     extraScrollBar = true;
 
     nowOffsetY = 0;
